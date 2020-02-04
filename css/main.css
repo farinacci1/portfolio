@@ -1,0 +1,146 @@
+html,body
+{
+	min-width:320px;
+	min-height: 500px;
+	height: 100%;
+	background-color:#00000c;
+	margin: 0;
+	padding: 0;
+}
+#console
+{
+	box-sizing:border-box;
+	margin: 0 auto;
+	min-height:100%;
+	
+	background-color:#262c38;
+	-moz-box-shadow: inset 0 0 10px #2a3cad;
+	-webkit-box-shadow: inset 0 0 10px #2a3cad;
+	box-shadow: inset 0 0 10px #2a3cad;
+}
+#console_header
+{
+	width:100%;
+	background-color:#191919;
+}
+#console_body
+{
+	width:100%;
+	height:100%;
+	background-color:inherit;
+	display: flex;
+	justify-content:center;
+		
+}
+#console_body_main
+{
+	position:relative;
+	text-align:center;
+	width:calc(100% - 40px);
+		
+}
+#console_header_left
+{
+	width:45%;
+	height: 100%;
+	box-sizing: border-box;
+	float: left;
+	color:white;
+	display:flex;
+	align-items:center;
+	padding-left: 10px;
+	font-family: 'Righteous' ,cursive;
+	font-size: 72px;
+}
+#console_header_right
+{
+	width:55%;
+	height:100%;
+	background: black;
+	float: right;
+	box-sizing: border-box;
+	clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+	-webkit-clip-path:(25% 0, 100% 0, 100% 100%, 0% 100%);
+	-o-clip-path:(25% 0, 100% 0, 100% 100%, 0% 100%);
+	-ms-clip-path:(25% 0, 100% 0, 100% 100%, 0% 100%);	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#options_container
+{
+	display: inline-block;
+	height:125px;
+	margin-left:25%;
+	margin-right: 10%;
+	width:65%;
+	display:flex;
+	align-items:center;
+	background-color:inherit;	
+}
+#linkdeln,#github,#youtube
+{
+	float: left;
+	width: calc(100%/3);
+	display: flex;
+	justify-content:center;
+	transition: transform .2s;	
+	
+}
+#linkdeln:hover, #github:hover,#youtube:hover
+{
+	transform: scale(1.3);
+}
+button
+{
+	background-color:transparent;
+	background-repeat: no-repeat;
+	border:none;
+	cursor: pointer;
+	outline:none;
+	width: 32px;
+	height: 32px;
+}
+img
+{
+	width: 32px;
+	height: 32px;
+}
+
+#AboutMe_container, #ProfessionalImage_container, #Portfolio_container, #Service_container
+{
+	
+	display:inline-block;
+	height:200px;
+	width:200px;
+	margin: 20px;
+        background-color:inherit;
+	vertical-align:top;
+        -moz-box-shadow: inset 0 0 10px #2a3cad;
+        -webkit-box-shadow: inset 0 0 10px #2a3cad;
+        box-shadow: inset 0 0 10px #2a3cad;
+	text-shadow: 0 -1px 1px #111;
+	
+}
+#AboutMe, #ProfessionalImage, #Portfolio,#Service
+{
+	display:table;
+	width:100%;
+	height:100%;
+	cursor: pointer;
+}
+#AboutMe > p, #ProfessionalImage > p, #Portfolio > p, #Service > p
+{
+        color: #C0C0C0;
+        font-size:24px;
+        font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+#AboutMe:hover,#ProfessionalImage:hover,#Portfolio:hover,#Service:hover
+{
+  text-shadow: -.25px -.25px 0 #C0C0C0,.25px .25px #C0C0C0;
+}
